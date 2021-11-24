@@ -27,7 +27,7 @@ class OrderApi2Controllers extends Controller
             
     [//'email'=>['required', 'string', 'email', 'max:100'] ,
         'id'=>"required","exists:products,id",
-    'quantity' => ['required','gt:0',],
+           'quantity' => ['required','gt:0',],
      
      ]);
     
