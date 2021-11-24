@@ -26,7 +26,7 @@ class OrderApi2Controllers extends Controller
             $validator = Validator:: make($order,
             
     [//'email'=>['required', 'string', 'email', 'max:100'] ,
-        'id'=>"exists:products,id",
+        'id'=>"required","exists:products,id",
     'quantity' => ['required','gt:0',],
      
      ]);
